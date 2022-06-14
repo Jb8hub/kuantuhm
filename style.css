@@ -204,7 +204,7 @@ header .logo {
   text-align: center;
   transition: 0.8s;
   margin-top: 10em;
-  transition-delay: 0.9s;
+  transition-delay: 0.8s;
 }
 .content h2 {
   position: relative;
@@ -272,6 +272,11 @@ section .sci li a {
   border-radius: 1px;
   text-transform: uppercase;
 }
+@media (max-height: 500px) {
+  .content h2 {
+    bottom: 1.2em;
+  }
+}
 @media (max-width: 800px) {
   section .sci {
     bottom: 20px;
@@ -279,8 +284,24 @@ section .sci li a {
   }
   .content h2 {
     font-size: 17vw;
+    display: inline-block;
+    width: 50%;
+    top: 0.9em;
+  }
+  .content h2 span {
+    font-size: 0.13em;
   }
   .glass {
     width: 50%;
+  }
+  .checkbox .trace {
+    width: 42px;
+    height: 7px;
+  }
+  .checkbox .trace:nth-child(1) {
+    top: 34px;
+  }
+  .checkbox .trace:nth-child(2) {
+    top: 50px;
   }
 }
