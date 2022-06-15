@@ -35,6 +35,21 @@
                 Lorem...<br /><span>Ipsum dolor haw ... lor sit am amet.</span>
               </h2>
             </div>
+            <div class="container">
+              <div class="card" style="--i: 1">
+                <div class="card-content">
+                  <h2>01</h2>
+                  <h3>Card One</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod te, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna
+                    aliquapor incididunt ut labore et dolore magna aliqua .
+                  </p>
+                  <a href="#"> Read More </a>
+                </div>
+              </div>
+            </div>
             <ul class="sci">
               <li style="--i: 1"><a href="#"> Instagram </a></li>
               <li style="--i: 2"><a href="#"> Twitter </a></li>
@@ -52,5 +67,14 @@
         <video src="cityxcape.mp4" autoplay muted loop></video>
       </header>
     </section>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll('.card'), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        'max-glare': 0.6,
+      });
+    </script>
   </body>
 </html>
